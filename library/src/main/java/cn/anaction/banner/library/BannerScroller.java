@@ -8,12 +8,9 @@ import android.content.Context;
 import android.widget.Scroller;
 
 /**
- * author: wuhaiyang(<a href="mailto:wuhaiyang@danlu.com">wuhaiyang@danlu.com</a>)<br/>
- * version: 1.0.0<br/>
- * since: 2017-05-02 下午4:54<br/>
- * <p>
- * 内容描述区域
- * </p>
+ * author: wuhaiyang
+ * version: 1.0.0
+ * since: 2017-05-02 下午4:54
  */
 public class BannerScroller extends Scroller {
     private int mDuration = 1000;

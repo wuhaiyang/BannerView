@@ -14,12 +14,10 @@ import android.widget.ImageView;
 import java.util.List;
 
 /**
- * author: wuhaiyang(<a href="mailto:wuhaiyang@danlu.com">wuhaiyang@danlu.com</a>)<br/>
- * version: 1.0.0<br/>
- * since: 2017-05-02 上午10:36<br/>
- * <p>
+ * author: wuhaiyang
+ * version: 1.0.0
+ * since: 2017-05-02 上午10:36
  * 工具方法
- * </p>
  */
 public class Utils {
 

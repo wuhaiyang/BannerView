@@ -27,12 +27,9 @@ import java.util.Stack;
 
 
 /**
- * author: wuhaiyang(<a href="mailto:wuhaiyang@danlu.com">wuhaiyang@danlu.com</a>)<br/>
- * version: 1.0.0<br/>
- * since: 2017-05-02 上午10:18<br/>
- * <p>
- * 轮播视图容器
- * </p>
+ * author: wuhaiyang
+ * version: 1.0.0
+ * since: 2017-05-02 上午10:18
  */
 public class BannerView extends RelativeLayout implements ViewPager.OnPageChangeListener {
     private static final int RMP = LayoutParams.MATCH_PARENT;

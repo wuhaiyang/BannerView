@@ -11,11 +11,9 @@ import android.util.AttributeSet;
 import java.lang.reflect.Field;
 
 /**
- * author: wuhaiyang(<a href="mailto:wuhaiyang@danlu.com">wuhaiyang@danlu.com</a>)<br/>
- * version: 1.0.0<br/>
- * since: 2017-05-02 上午10:21<br/>
- * <p>
- * </p>
+ * author: wuhaiyang
+ * version: 1.0.0
+ * since: 2017-05-02 上午10:21
  */
 public class FitViewPager extends ViewPager {
 

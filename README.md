@@ -2,7 +2,6 @@
 ============
 
 ## 目录
-
 * [功能介绍](#功能介绍)
 * [效果图与示例 apk](#效果图与示例-apk)
 * [使用](#使用)
@@ -10,23 +9,20 @@
 * [License](#license)
 
 ## 功能介绍
-
 - [x] 引导界面导航&广告等效果
 - [x] 支持自定义指示器位置
 - [x] 支持自定义图片指示器背景
 - [x] 支持监听 item 点击事件
 
 ## 使用
-
 ### 1.添加 Gradle 依赖
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.bingoogolapple/bga-banner/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.bingoogolapple/bga-banner) bga-banner 后面的「latestVersion」指的是左边这个 maven-central 徽章后面的「数字」，请自行替换。
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.anaction.banner/library/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.anaction.banner/library)  后面的「latestVersion」指的是左边这个 maven-central 徽章后面的「数字」，请自行替换。
 
 ```groovy
 dependencies {
-    compile 'cn.bingoogolapple:bga-banner:latestVersion@aar'
+    compile 'cn.anaction.banner:library:lastVersion@aar'
 }
 ```
-
 ### 2.在布局文件中添加 BannerView
 
 ```xml
@@ -42,9 +38,7 @@ dependencies {
         app:bvPointerGravity="right|bottom"
         app:bvPointerSpacing="8dp"/>
 ```
-
-### 3.在 Activity 或者 Fragment 中配置 BannerView 的数据源
-
+### 3.在 Activity 或者 Fragment 
 ```java
 
  bannerView.setAdapter(new BannerView.Adapter() {
@@ -89,11 +83,37 @@ dependencies {
 
 ## 自定义属性说明
 
-
 ```xml
+ <declare-styleable name="BannerView">
+ 			<!--viewPager 切换时长-->
+        <attr name="bvPageChangeDuration" format="integer"/>
+        <!--是否显示指示器-->
+        <attr name="bvIsShowPointer" format="boolean"/>
+         <!--指示器容器高度-->
+        <attr name="bvPointerContainerHeight" format="dimension"/>
+        <!--指示器左右margin-->
+        <attr name="bvPointerParentLeftRight" format="dimension"/>
+        <!--指示器之间的间距-->
+        <attr name="bvPointerSpacing" format="dimension"/>
 
+        <!-- 指示点容器背景 -->
+        <attr name="bvPointerContainerBackground" format="reference|color"/>
+        <!-- 指示点背景 -->
+        <attr name="bvPointerDrawable" format="reference"/>
+        <!-- 指示器的位置 -->
+        <attr name="bvPointerGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_horizontal" value="0x01"/>
+        </attr>
+        <!-- 是否开启自动轮播 -->
+        <attr name="bvPointerAutoPlayAble" format="boolean"/>
+        <!-- 自动轮播的时间间隔 -->
+        <attr name="bvPointerPlayInterval" format="integer"/>
+    </declare-styleable>
 ```
-
 ## License
 
     Copyright 2017 andaction
