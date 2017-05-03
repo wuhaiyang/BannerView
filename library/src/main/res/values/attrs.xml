@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. danlu.com Co.Ltd. All rights reserved.
+  -->
+
+<resources>
+    <declare-styleable name="BannerView">
+        <attr name="bvPageChangeDuration" format="integer"/>
+        <attr name="bvIsShowPointer" format="boolean"/>
+        <attr name="bvPointerContainerHeight" format="dimension"/>
+        <attr name="bvPointerParentLeftRight" format="dimension"/>
+        <attr name="bvPointerSpacing" format="dimension"/>
+
+        <!-- 指示点容器背景 -->
+        <attr name="bvPointerContainerBackground" format="reference|color"/>
+        <!-- 指示点背景 -->
+        <attr name="bvPointerDrawable" format="reference"/>
+        <!-- 指示器的位置 -->
+        <attr name="bvPointerGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_horizontal" value="0x01"/>
+        </attr>
+        <!-- 是否开启自动轮播 -->
+        <attr name="bvPointerAutoPlayAble" format="boolean"/>
+        <!-- 自动轮播的时间间隔 -->
+        <attr name="bvPointerPlayInterval" format="integer"/>
+        <!-- 页码切换过程的时间长度 -->
+
+    </declare-styleable>
+</resources>

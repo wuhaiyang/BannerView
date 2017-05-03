@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2017. danlu.com Co.Ltd. All rights reserved.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.anaction.banner.bannerlib.MainActivity">
+
+
+    <cn.anaction.banner.library.BannerView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:bvIsShowPointer="true"
+        app:bvPageChangeDuration="800"
+        app:bvPointerPlayInterval="2000"
+        app:bvPointerAutoPlayAble="true"
+        app:bvPointerContainerHeight="20dp"
+        app:bvPointerGravity="right|bottom"
+        app:bvPointerSpacing="8dp"/>
+
+</RelativeLayout>

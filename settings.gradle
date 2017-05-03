@@ -1,0 +1,5 @@
+/*
+ * Copyright (c) 2017. danlu.com Co.Ltd. All rights reserved.
+ */
+
+include ':app', ':library'
