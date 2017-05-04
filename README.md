@@ -16,11 +16,10 @@
 
 ## 使用
 ### 1.添加 Gradle 依赖
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/cn.anaction.banner/library/badge.svg)](https://maven-badges.herokuapp.com/maven-central/cn.anaction.banner/library)  后面的「latestVersion」指的是左边这个 maven-central 徽章后面的「数字」，请自行替换。
 
 ```groovy
 dependencies {
-    compile 'cn.anaction.banner:library:lastVersion@aar'
+    compile 'cn.anaction.banner:library:0.0.1@aar'
 }
 ```
 ### 2.在布局文件中添加 BannerView
